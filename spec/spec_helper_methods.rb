@@ -22,5 +22,7 @@ def os_specific_facts(facts)
     when '7'
       { service_provider: 'systemd' }
     end
+  when 'FreeBSD'
+    { service_provider: 'freebsd' }
   end
 end
