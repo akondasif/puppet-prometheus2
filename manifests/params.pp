@@ -51,7 +51,7 @@ class prometheus::params {
   $process_exporter_config_path = '/etc/process-exporter.yaml'
   $mysqld_exporter_cnf_config_path = '/etc/.my.cnf'
   $mysqld_exporter_cnf_host = 'localhost'
-  $mysqld_exporter_cnf_password = 'password'
+  $mysqld_exporter_cnf_password = hiera('mysql_export_cnf_pwd')
   $mysqld_exporter_cnf_port = 3306
   $mysqld_exporter_cnf_user = 'login'
   $mysqld_exporter_download_extension = 'tar.gz'
